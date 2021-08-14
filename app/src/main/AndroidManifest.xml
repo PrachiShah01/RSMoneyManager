@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.TeQPrit.money">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Rs - Money Manager"
+        android:roundIcon="@drawable/logoround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.TeQPrit.money.splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.TeQPrit.money.Updatec"
+            android:label="Update"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.TeQPrit.money.Newentry"
+            android:label="New Entry"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.myback" />
+
+        <activity
+            android:name="com.TeQPrit.money.MainActivity"
+            android:label="Rs - Money Manager"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>
